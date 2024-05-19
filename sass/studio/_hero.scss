@@ -1,0 +1,106 @@
+.hero {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--button-background);
+  }
+  
+  .hero-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .hero-article {
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .hero-article {
+    background-color: var(--background-color);
+    padding-bottom: 30px;
+  }
+  
+  .hero-title1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+  }
+  
+  .img-hero {
+    width: 270px;
+    height: 260px;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+  }
+  
+  .hero-title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+  
+  .hero-text {
+    color: var(--additional-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    margin-top: 10px;
+  }
+  
+  .picturis-list {
+    display: flex;
+    justify-content: center;
+  
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  
+  .pictures-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    padding: 12px;
+  }
+  
+  .hero-pectures {
+    transition-duration: 250ms;
+    transition-property: background-color, fill;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1); 
+    width: 20px;
+    height: 20px;
+    fill: var(--additional-text-color);
+  }
+  
+  .pictures-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    padding: 12px;
+  }
+  
+  .pictures-item:hover {
+    background-color: var(--WebStudio-color);
+  }
+  
+  .pictures-item:hover .hero-pectures {
+    fill: var(--background-color);
+  }
+  
+  .pictures-link:focus .hero-pectures {
+    fill: var(--background-color);
+  }
+  
+  .pictures-link:focus {
+    background-color: var(--WebStudio-color);
+    fill: var(--background-color);
+  }
+  

@@ -1,0 +1,54 @@
+.team {
+    padding-top: 59px;
+    padding-bottom: 94px;
+  }
+  
+  .team-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .team-title1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+  }
+  
+  .team-item {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
+  
+  .team-logo {
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+  }
+  
+  .team-container {
+    top: 224px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+  }
+  
+  .team-text {
+    color: var(--background-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  

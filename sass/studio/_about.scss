@@ -1,0 +1,52 @@
+.about-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    height: 100%;
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+      url(../images/people.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4); /* або rgba(255, 255, 255, 1),rgba(255, 255, 255, 1) */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border-radius: 4px;
+  }
+  
+  .about-title {
+    color: var(--background-color);
+    max-width: 696px;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+  }
+  /* 30px це низ */
+  
+  .about-button {
+    transition-duration: 250ms;
+    transition-property: background-color;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1); 
+    color: var(--background-color);
+    width: 216px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    background: var(--WebStudio-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .about-button:hover {
+    background: rgb(108, 108, 255);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
