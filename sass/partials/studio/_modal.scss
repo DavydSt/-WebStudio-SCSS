@@ -17,13 +17,13 @@
   .modal {
     width: 528px;
     height: 581px;
-    background-color: var(--background-color);
+    background-color: $background-color;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    background: var(--background-color);
+    background: $background-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   }
@@ -34,7 +34,7 @@
     padding: 6px, 6px, 6px, 6px;
     border-radius: 50%;
     border: solid rgba(0, 0, 0, 0.1);
-    background-color: var(--background-color);
+    background-color: $background-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@
   }
   
   .modal-title {
-    color: var(--accent-color);
+    color: $accent-color;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
@@ -71,7 +71,7 @@
   }
   
   .modal-subtitle {
-    color: var(--additional-text-color);
+    color: $additional-text-color;
     margin-top: 10px;
     margin-bottom: 4px;
     font-family: Roboto;
@@ -88,22 +88,22 @@
   
     padding: 11px 0px 11px 12px;
     border-radius: 4px;
-    background: var(--background-color);
+    background:$background-color;
     border: 1px solid rgba(33, 33, 33, 0.2);
   }
   
   .modal-korobka:hover {
-    border: 1px solid var(--WebStudio-color);
+    border: 1px solid$WebStudio-color;
   }
   
   .modal-korobka:hover .modal-picture {
-    fill: var(--WebStudio-color);
+    fill:$WebStudio-color;
   }
   
   .modal-picture {
     width: 18px;
     height: 18px;
-    fill: var(--text-color);
+    fill:$text-color;
   }
   
   .modal-table-text {
@@ -144,9 +144,9 @@
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    background: var(--WebStudio-color);
+    background: $WebStudio-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--background-color);
+    color: $background-color;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
@@ -168,7 +168,7 @@
   } */
   
   .checkbox {
-    border: var(--text-color) solid;
+    border: $text-color solid;
     width: 16px;
     border-radius: 4px;
     height: 15px;
@@ -176,7 +176,7 @@
   
   .select:checked {
     background-image: url(../symbol-defs.svg#icon-icon-check);
-    background-color: var(--WebStudio-color);
+    background-color: $WebStudio-color;
   }
   
   .coordination-text {

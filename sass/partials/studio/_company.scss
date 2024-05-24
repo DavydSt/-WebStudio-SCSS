@@ -4,7 +4,7 @@
   }
   
   .companys-titel {
-    color: var(--accent-color);
+    color: $accent-color;
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -27,33 +27,33 @@
     display: flex;
     height: 92px;
     border-radius: 4px;
-    border: 1px solid var(--companys-color);
+    border: 1px solid $companys-color;
     justify-content: center;
     align-items: center;
   }
   
   .companys-item:hover {
-    border: 1px solid var(--WebStudio-color);
+    border: 1px solid $WebStudio-color;
   }
   
   .companys-item:hover .companys-picture {
-    fill: var(--WebStudio-color);
+    fill: $WebStudio-color;
   }
   
   .companys-picture {
     transition-duration: 250ms;
     transition-property: fill, border;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1); 
-    fill: var(--companys-color);
+    fill: $companys-color;
     width: 106px;
     height: 60px;
   }
   
   .companys-item:focus .compan-link {
-    fill: var(--WebStudio-color);
-    border: 1px solid var(--WebStudio-color);
+    fill: $WebStudio-color;
+    border: 1px solid $WebStudio-color;
   }
   
   .compan-link:focus .companys-picture {
-    fill: var(--WebStudio-color);
+    fill: $WebStudio-color;
   }

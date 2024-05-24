@@ -10,7 +10,7 @@
   }
   
   .team-title1 {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -41,7 +41,7 @@
   }
   
   .team-text {
-    color: var(--background-color);
+    color: $background-color;
     text-align: center;
     font-family: Roboto;
     font-size: 14px;

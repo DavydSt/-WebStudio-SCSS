@@ -14,7 +14,7 @@
     margin-right: auto;
     height: 384px;
     position: relative;
-    background-color: var(--background-col);
+    background-color: $background-color;
   }
   
   .hero-img {
@@ -73,7 +73,7 @@
   } */
   
   .box-text {
-    color: var(--background-color);
+    color: $background-color;
     font-family: Roboto;
     font-size: 18px;
     font-style: normal;
@@ -103,7 +103,7 @@
   }
   
   .hero-title {
-    color: var(--accent-color);
+    color: $accent-color;
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -117,7 +117,7 @@
   }
   
   .hero-text {
-    color: var(--additional-text-color);
+    color: $additional-text-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.87;
@@ -132,7 +132,7 @@
     flex-basis: calc((100% / 3) - 30px);
     border: 1px solid #eee;
     border-radius: 0px 0px 4px 4px;
-    background: var(--background-col);
+    background: $background-color;
   }
   
   .hero-item:hover {
