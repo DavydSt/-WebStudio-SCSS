@@ -1,0 +1,56 @@
+.welcome-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  animation-name: welcome-box;
+  animation-duration: 4000ms;
+  animation-iteration-count: 1;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  transform: translate(1000000px, 0px);
+
+  &__title {
+    font-family: Roboto;
+    color: $text-color;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.38;
+  }
+
+  &__title1 {
+    font-family: Raleway;
+    color: $WebStudio-color;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.38;
+  }
+
+  &__title2 {
+    font-family: Raleway;
+    color: $text-color;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.38;
+  }
+}
+
+@keyframes welcome-box {
+  0% {
+    transform: translate(-1000px, 0px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(1000px, 0px);
+  }
+}

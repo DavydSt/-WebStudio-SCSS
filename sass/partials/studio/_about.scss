@@ -1,4 +1,6 @@
-.about-container {
+.about{
+
+  &__container {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -14,7 +16,7 @@
     border-radius: 4px;
   }
   
-  .about-title {
+  &__title {
     color: $background-color;
     max-width: 696px;
     text-align: center;
@@ -27,7 +29,7 @@
   }
   /* 30px це низ */
   
-  .about-button {
+  &__button {
     transition-duration: 250ms;
     transition-property: background-color;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1); 
@@ -46,7 +48,10 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
   
-  .about-button:hover {
+  &__button:hover {
     background: rgb(108, 108, 255);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
+
+}
+
