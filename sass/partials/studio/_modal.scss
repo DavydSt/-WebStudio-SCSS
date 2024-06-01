@@ -34,9 +34,7 @@
     border-radius: 50%;
     border: solid rgba(0, 0, 0, 0.1);
     background-color: $background-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-box();
   }
 
   &__picture {
@@ -57,9 +55,7 @@
   }
 
   &__list-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box();
   }
 
   &__subtitle {

@@ -164,9 +164,7 @@ section{
   
   &__container &__list &__item {
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box();
     flex-wrap: wrap;
   }
   

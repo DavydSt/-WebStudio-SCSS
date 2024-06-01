@@ -26,12 +26,11 @@
   
   &__item {
     width: 170px;
-    display: flex;
+    @include flex-box();
     height: 92px;
     border-radius: 4px;
     border: 1px solid $companys-color;
-    justify-content: center;
-    align-items: center;
+
   }
   
   &__item:hover {

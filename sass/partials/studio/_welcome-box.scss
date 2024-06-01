@@ -1,7 +1,5 @@
 .welcome-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-box();
   position: fixed;
   animation-name: welcome-box;
   animation-duration: 4000ms;

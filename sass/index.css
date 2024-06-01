@@ -111,11 +111,13 @@ section {
   font-weight: 700;
   line-height: 1.38;
 }
-.header__link:focus, .header__link:hover {
+.header__link:focus,
+.header__link:hover {
   outline: none;
   color: #2196f3;
 }
-.header__contact:focus, .header__contact:hover {
+.header__contact:focus,
+.header__contact:hover {
   outline: none;
   color: #2196f3;
 }
@@ -208,7 +210,7 @@ section {
 }
 
 .about {
- color: rgb(0, 0, 0, 0);
+  color: rgb(0, 0, 0, 0);
 }
 .about__container {
   display: block;
@@ -216,7 +218,11 @@ section {
   margin-right: auto;
   max-width: 1600px;
   height: 100%;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/people.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/people.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4); /* або rgba(255, 255, 255, 1),rgba(255, 255, 255, 1) */
@@ -377,7 +383,8 @@ section {
 }
 
 .hero-article {
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .hero-article {
@@ -689,7 +696,7 @@ section {
   top: 0px;
   bottom: 0px;
   -webkit-backdrop-filter: blur 0.5;
-          backdrop-filter: blur 0.5;
+  backdrop-filter: blur 0.5;
 }
 
 .is-hidden {
@@ -708,7 +715,8 @@ section {
   transform: translate(-50%, -50%);
   border-radius: 4px;
   background: #fff;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 .modal-button {
@@ -880,4 +888,4 @@ section {
   line-height: 24px;
   letter-spacing: 0.42px;
   text-decoration-line: underline;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

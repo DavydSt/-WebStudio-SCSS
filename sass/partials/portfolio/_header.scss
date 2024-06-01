@@ -35,9 +35,7 @@ body {
   
   .portfolio{
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box();
     animation-name: go-box;
     animation-duration: 4000ms;
     animation-iteration-count: 1;
@@ -237,9 +235,7 @@ body {
   }
   
   &__container &__list &__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @include flex-box();
     flex-wrap: wrap;
   }
   
