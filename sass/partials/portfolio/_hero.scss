@@ -2,31 +2,28 @@
     padding-top: 25px;
     padding-bottom: 94px;
     flex-direction: row-reverse;
-  }
+
   
-  .hero-list {
+  &__list {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
   }
   
-  .hero-article {
+  &__article {
     margin-right: auto;
     height: 384px;
     position: relative;
     background-color: $background-color;
   }
   
-  .hero-img {
+  &__img {
     margin-bottom: 20px;
   }
   
-  img {
-    display: block;
-    width: 100%;
-  }
+ 
   
-  .hero-box-text {
+  &__box-text {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
     transition-property: transform;
@@ -72,17 +69,9 @@
   
   } */
   
-  .box-text {
-    color: $background-color;
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px; /* 155.556% */
-    letter-spacing: 0.54px;
-  }
   
-  .hero-item:hover .hero-box-text {
+  
+  &__item:hover &__box-text {
     /* animation-name: text-box;
     animation-duration: 400ms;
     animation-iteration-count: 1;
@@ -92,17 +81,9 @@
     transform: translate(-0px, -110px);
   }
   
-  .corobka{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 100px;
-    overflow: hidden;
-    z-index: 2;
-  }
+ 
   
-  .hero-title {
+  &__title {
     color: $accent-color;
     font-size: 18px;
     font-weight: 700;
@@ -111,12 +92,12 @@
     margin-left: 24px;
   }
   
-  .hero-item:focus {
+  &__item:focus {
     border-color: #2196f3;
     border-radius: 2px;
   }
   
-  .hero-text {
+  &__text {
     color: $additional-text-color;
     font-size: 16px;
     font-weight: 400;
@@ -125,7 +106,7 @@
     margin-left: 24px;
   }
   
-  .hero-item {
+  &__item {
     padding-bottom: 20px;
     /* width: 370px; */
     /* flex-basis: calc((100% - (2 * 30px)) / 3); */
@@ -135,8 +116,34 @@
     background: $background-color;
   }
   
-  .hero-item:hover {
+  &__item:hover {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   }
   
+}
+
+.corobka{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 100px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.box-text {
+  color: $background-color;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.54px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

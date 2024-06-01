@@ -2,25 +2,25 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: $button-background;
-  }
+
   
-  .hero-list {
+  &__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
   }
   
-  .hero-article {
+  &__article {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
   
-  .hero-article {
+  &__article {
     background-color: $background-color;
     padding-bottom: 30px;
   }
   
-  .hero-title1 {
+  &__title1 {
     color: $text-color;
     text-align: center;
     font-size: 36px;
@@ -35,7 +35,7 @@
     margin-bottom: 30px;
   }
   
-  .hero-title {
+  &__title {
     color: $text-color;
     text-align: center;
     font-size: 16px;
@@ -43,7 +43,7 @@
     line-height: 1.18;
   }
   
-  .hero-text {
+  &__text {
     color: $additional-text-color;
     text-align: center;
     font-size: 16px;
@@ -51,17 +51,28 @@
     line-height: 1.18;
     margin-top: 10px;
   }
+
+  &__pectures {
+    transition-duration: 250ms;
+    transition-property: background-color, fill;
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1); 
+    width: 20px;
+    height: 20px;
+    fill: $additional-text-color;
+  }
+
+}
   
-  .picturis-list {
+  .picture {
     display: flex;
     justify-content: center;
   
     padding-top: 16px;
     padding-left: 32px;
     padding-right: 32px;
-  }
+
   
-  .pictures-item {
+  &__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,36 +82,28 @@
     padding: 12px;
   }
   
-  .hero-pectures {
-    transition-duration: 250ms;
-    transition-property: background-color, fill;
-    transition-delay: cubic-bezier(0.4, 0, 0.2, 1); 
-    width: 20px;
-    height: 20px;
-    fill: $additional-text-color;
-  }
-  
-  .pictures-link {
+  &__link {
     width: 44px;
     height: 44px;
     border-radius: 100%;
     padding: 12px;
   }
   
-  .pictures-item:hover {
+  &__item:hover {
     background-color: $WebStudio-color;
   }
   
-  .pictures-item:hover .hero-pectures {
+  &__item:hover .hero-pectures {
     fill: $background-color;
   }
   
-  .pictures-link:focus .hero-pectures {
+  &__link:focus .hero-pectures {
     fill: $background-color;
   }
   
-  .pictures-link:focus {
+  &__link:focus {
     background-color: $WebStudio-color;
     fill: $background-color;
   }
-  
+
+}

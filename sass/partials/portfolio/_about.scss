@@ -1,22 +1,22 @@
 .about {
     padding-top: 94px;
     padding-bottom: 25px;
-  }
+
   
-  .about-list {
+  &__list {
     display: flex;
     gap: 8px;
     justify-content: center;
   }
   
-  /* .about-button:focus  {
+  /* &__button:focus  {
     color: var(--background-color);
     background: var(--WebStudio-color);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   } */
   
-  .about-button {
+  &__button {
     transition-duration: 250ms;
     transition-property: color, box-shadaw;
     transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
@@ -30,17 +30,18 @@
     background: $button-background;
   }
   
-  .about-button:hover {
+  &__button:hover {
     color: $background-color;
     background: $WebStudio-color;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   }
   
-  .about-button:focus .about-link {
+  &__button:focus &__link {
     color: $background-color;
     background: $WebStudio-color;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   }
   
+}

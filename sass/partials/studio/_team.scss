@@ -1,15 +1,15 @@
 .team {
     padding-top: 59px;
     padding-bottom: 94px;
-  }
+
   
-  .team-list {
+  &__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
   }
   
-  .team-title1 {
+  &__title1 {
     color: $text-color;
     text-align: center;
     font-size: 36px;
@@ -17,19 +17,19 @@
     line-height: 1.16;
   }
   
-  .team-item {
+  &__item {
     position: relative;
     width: 370px;
     height: 294px;
   }
   
-  .team-logo {
+  &__logo {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
   }
   
-  .team-container {
+  &__container {
     top: 224px;
     position: absolute;
     display: flex;
@@ -40,7 +40,7 @@
     height: 70px;
   }
   
-  .team-text {
+  &__text {
     color: $background-color;
     text-align: center;
     font-family: Roboto;
@@ -51,4 +51,4 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
   }
-  
+}
