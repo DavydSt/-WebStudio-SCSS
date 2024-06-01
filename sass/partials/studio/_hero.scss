@@ -28,7 +28,7 @@
     line-height: 1.16;
   }
   
-  .img-hero {
+  &__img {
     width: 270px;
     height: 260px;
     flex-shrink: 0;
@@ -61,18 +61,18 @@
     fill: $additional-text-color;
   }
 
-}
+
   
-  .picture {
+   &__picturis-list{
     display: flex;
     justify-content: center;
   
     padding-top: 16px;
     padding-left: 32px;
     padding-right: 32px;
-
+}
   
-  &__item {
+  &__picturis-item {
     @include flex-box();
     width: 44px;
     height: 44px;
@@ -80,26 +80,26 @@
     padding: 12px;
   }
   
-  &__link {
+  &__picturis-link {
     width: 44px;
     height: 44px;
     border-radius: 100%;
     padding: 12px;
   }
   
-  &__item:hover {
+  &__picturis-item:hover {
     background-color: $WebStudio-color;
   }
   
-  &__item:hover .hero-pectures {
+  &__picturis-item:hover &__pectures {
     fill: $background-color;
   }
   
-  &__link:focus .hero-pectures {
+  &__picturis-link:focus &__pectures {
     fill: $background-color;
   }
   
-  &__link:focus {
+  &__picturis-link:focus {
     background-color: $WebStudio-color;
     fill: $background-color;
   }
