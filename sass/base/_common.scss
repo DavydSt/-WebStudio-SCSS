@@ -1,0 +1,30 @@
+body {
+    font-family: Roboto;
+    letter-spacing: 0.03em;
+    list-style: none;
+  }
+  
+  .container {
+ outline: solid red; 
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  section{
+    animation-name: section-invisible;
+    animation-duration: 7000ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }

@@ -1,4 +1,97 @@
 @charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+body {
+  font-family: Roboto;
+  letter-spacing: 0.03em;
+  list-style: none;
+}
+
+.container {
+  outline: solid red;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section {
+  animation-name: section-invisible;
+  animation-duration: 7000ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+
+*:focus {
+  outline: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 .welcome-box {
   display: flex;
   align-items: center;
@@ -36,41 +129,11 @@
   line-height: 1.38;
 }
 
-body {
-  font-family: Roboto;
-  letter-spacing: 0.03em;
-  list-style: none;
-}
-
-.container {
-  /* outline: solid red; */
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-section {
-  animation-name: section-invisible;
-  animation-duration: 7000ms;
-  animation-iteration-count: 1;
-  opacity: 1;
-}
-
-*:focus {
-  outline: none;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
 /*header*/
 .header {
   padding-top: 24px;
-  padding-bottom: 16px;
+  padding-bottom: 25px;
+  border-bottom: solid #ececec;
 }
 .header__title1 {
   font-family: Raleway;
@@ -93,6 +156,9 @@ section {
 .header__contact:focus, .header__contact:hover {
   outline: none;
   color: #2196f3;
+}
+.header__container {
+  display: flex;
 }
 .header__link {
   /* transition-timing-function: cubic-bezier(1, 0.99, 0, -0.01); */
@@ -122,9 +188,7 @@ section {
 }
 .header__link:hover::after {
   opacity: 1;
-}
-.header__link:visited:after {
-  opacity: 1;
+  /* transform: scaleX(1); */
 }
 .header__contact {
   color: #757575;
@@ -182,6 +246,13 @@ section {
   flex-wrap: nowrap;
 }
 
+/* .line{
+  margin-top: 28px;
+  width: 48px;
+height: 4px;
+border-radius: 2px;
+background: var(--WebStudio-color);
+} */
 .about {
   /* 30px це низ */
 }
@@ -237,11 +308,11 @@ section {
   padding-top: 94px;
   padding-bottom: 59px;
 }
-.main .main-list {
+.main__list {
   display: flex;
   gap: 30px;
 }
-.main .main-title {
+.main__title {
   color: #000;
   font-size: 14px;
   font-weight: 700;
@@ -249,7 +320,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.main .main-list .main-item::before {
+.main__list .main__item::before {
   display: block;
   width: 270px;
   height: 120px;
@@ -258,19 +329,19 @@ section {
   margin-bottom: 30px;
   border-radius: 4px;
 }
-.main .main-list .main-item:first-child::before {
+.main__list .main__item:first-child::before {
   content: url(../images/antenna1.jpg);
 }
-.main .main-list .main-item:nth-child(2)::before {
+.main__list .main__item:nth-child(2)::before {
   content: url(../images/clock1.jpg);
 }
-.main .main-list .main-item:nth-child(3)::before {
-  content: url(../images/diagram1.jpg);
+.main__list .main__item:nth-child(3)::before {
+  content: url(../../../images/computer-2.png);
 }
-.main .main-list .main-item:last-child::before {
+.main__list .main__item:last-child::before {
   content: url(../images/astronaut1.jpg);
 }
-.main .main-text {
+.main__text {
   color: #757575;
   font-size: 14px;
   font-weight: 400;
@@ -381,6 +452,7 @@ section {
 .hero__picturis-list {
   display: flex;
   justify-content: center;
+  gap: 10px;
   padding-top: 16px;
   padding-left: 32px;
   padding-right: 32px;

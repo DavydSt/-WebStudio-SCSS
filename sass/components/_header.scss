@@ -1,125 +1,6 @@
-body {
-    font-family: Roboto;
-    letter-spacing: 0.03em;
-    list-style: none;
-  }
+ /*header*/
   
-  .container {
-    /* outline: solid red; */
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  section{
-    animation-name: section-invisible;
-    animation-duration: 7000ms;
-    animation-iteration-count: 1;
-    opacity: 1;
-  }
-  
-  @keyframes section-invisible {
-   0%{
-    opacity: 0;
-   }
-  
-   50%{
-    opacity: 0;
-   }
-  
-   100%{
-    opacity: 1;
-   }
-  }
-  
-  .portfolio{
-    position: fixed;
-    @include flex-box();
-    animation-name: go-box;
-    animation-duration: 4000ms;
-    animation-iteration-count: 1;
-    opacity: 0;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-
-  
-  // @keyframes go-box {
-  
-  //   0%{
-  //     opacity: 0;
-  //     transform: translate(-500px, 0px);
-  //   }
-  
-  //   50%{
-  //     opacity: 1;
-  //     transform: translate(0px, 0px);
-  //   }
-  
-  //   100%{
-  //     opacity: 0;
-  //     transform: translate(500px, 0px);
-  //   }
-  // }
-  
-  &__title{
-    font-family: Roboto;
-    color: $text-color;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 1.38;
-    /* animation-name: run-title;
-    animation-duration: 4000ms;
-    animation-iteration-count: 1; */
-    opacity: 1;
-  }
-
-}
-  
-  /* .portfolio-title2{
-    font-family: Roboto;
-    color: var(--text-color);
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 1.38;
-    animation-name: run-title2;
-    animation-duration: 4000ms;
-    animation-iteration-count: 1;
-  }
-  
-  @keyframes run-title2{
-    0%{
-      opacity: 0;
-      transform: translate(-700px, 0px);
-    }
-  
-    50%{
-      opacity: 1;
-      
-      transform: translate(0px, 0px);
-    }
-  
-    100%{
-      opacity: 0;
-      transform: translate(700px, 0px);
-    }
-  } */
-  
-  *:focus {
-    outline: none;
-  }
-  
-  *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  }
-  
-  /*header*/
-  
-  .header {
+ .header {
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: solid $line-color;
@@ -151,6 +32,10 @@ body {
   &__contact:hover {
     outline: none;
     color: $WebStudio-color;
+  }
+
+  &__container {
+display: flex;
   }
   
   &__link {

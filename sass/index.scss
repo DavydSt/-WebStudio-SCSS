@@ -1,11 +1,13 @@
 @import "./utils/variables";
 @import"./utils/mixins";
+@import"./base/reset";
+@import"./base/common";
 @import "./partials/studio/welcome-box";
-@import "./partials/studio/header";
+@import"./components/header";
 @import "./partials/studio/about";
 @import "./partials/studio/main";
 @import "./partials/studio/team";
 @import "./partials/studio/hero";
 @import "./partials/studio/company";
-@import "./partials/studio/footer";
+@import"./components/footer";
 @import "./partials/studio/modal";

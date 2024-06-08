@@ -1,6 +1,9 @@
 @import "./utils/variables";
 @import"./utils/mixins";
-@import "./partials/portfolio/header";
+@import"./base/reset";
+@import"./base/common";
+@import"./components/header";
+@import"./partials/portfolio/portfolio";
 @import "./partials/portfolio/about";
 @import "./partials/portfolio/hero";
-@import "./partials/portfolio/footer";
+@import "./components/footer";

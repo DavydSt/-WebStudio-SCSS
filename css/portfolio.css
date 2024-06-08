@@ -1,3 +1,65 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
 body {
   font-family: Roboto;
   letter-spacing: 0.03em;
@@ -5,7 +67,7 @@ body {
 }
 
 .container {
-  /* outline: solid red; */
+  outline: solid red;
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -19,71 +81,6 @@ section {
   opacity: 1;
 }
 
-@keyframes section-invisible {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.portfolio {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation-name: go-box;
-  animation-duration: 4000ms;
-  animation-iteration-count: 1;
-  opacity: 0;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-}
-.portfolio__title {
-  font-family: Roboto;
-  color: #000;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 1.38;
-  /* animation-name: run-title;
-  animation-duration: 4000ms;
-  animation-iteration-count: 1; */
-  opacity: 1;
-}
-
-/* .portfolio-title2{
-  font-family: Roboto;
-  color: var(--text-color);
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 1.38;
-  animation-name: run-title2;
-  animation-duration: 4000ms;
-  animation-iteration-count: 1;
-}
-
-@keyframes run-title2{
-  0%{
-    opacity: 0;
-    transform: translate(-700px, 0px);
-  }
-
-  50%{
-    opacity: 1;
-
-    transform: translate(0px, 0px);
-  }
-
-  100%{
-    opacity: 0;
-    transform: translate(700px, 0px);
-  }
-} */
 *:focus {
   outline: none;
 }
@@ -121,6 +118,9 @@ section {
 .header__contact:focus, .header__contact:hover {
   outline: none;
   color: #2196f3;
+}
+.header__container {
+  display: flex;
 }
 .header__link {
   /* transition-timing-function: cubic-bezier(1, 0.99, 0, -0.01); */
@@ -215,6 +215,70 @@ height: 4px;
 border-radius: 2px;
 background: var(--WebStudio-color);
 } */
+.portfolio {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: go-box;
+  animation-duration: 4000ms;
+  animation-iteration-count: 1;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.portfolio__title {
+  font-family: Roboto;
+  color: #000;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.38;
+  /* animation-name: run-title;
+  animation-duration: 4000ms;
+  animation-iteration-count: 1; */
+  opacity: 1;
+}
+
+/* .portfolio-title2{
+  font-family: Roboto;
+  color: var(--text-color);
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.38;
+  animation-name: run-title2;
+  animation-duration: 4000ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes run-title2{
+  0%{
+    opacity: 0;
+    transform: translate(-700px, 0px);
+  }
+
+  50%{
+    opacity: 1;
+
+    transform: translate(0px, 0px);
+  }
+
+  100%{
+    opacity: 0;
+    transform: translate(700px, 0px);
+  }
+} */
+*:focus {
+  outline: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 .about {
   padding-top: 94px;
   padding-bottom: 25px;
@@ -386,25 +450,25 @@ img {
 
 .footer {
   /* display: flex;
-    justify-content: space-between; */
-  background-color: #2f303a;
+  justify-content: space-between; */
+  background-color: background-color2;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-right: 215px;
-  /* &__pictures-link:focus {
-      background-color: var(--WebStudio-color);
-      fill: var(--background-color);
-    } */
+  /*&__pictures-link:focus {
+    background-color: var(--WebStudio-color);
+    fill: var(--background-color);
+  } */
 }
 .footer__title1 {
-  color: #2196f3;
+  color: WebStudio-color;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
 }
 .footer__title2 {
-  color: #fff;
+  color: background-color;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -415,7 +479,7 @@ img {
   justify-content: center;
 }
 .footer__text {
-  color: #fff;
+  color: background-color;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -429,7 +493,7 @@ img {
   margin-top: 9px;
 }
 .footer__link {
-  color: #757575;
+  color: additional-text-color;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -486,6 +550,11 @@ img {
 .sing-up {
   margin-left: 93px;
 }
+.sing-up__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .sing-up__titele {
   margin-bottom: 20px;
   color: #fff;
@@ -523,11 +592,6 @@ img {
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-.sing-up__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .sing-up__picture {
   width: 24px;
