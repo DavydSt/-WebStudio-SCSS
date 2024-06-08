@@ -307,10 +307,12 @@ background: var(--WebStudio-color);
   border-radius: 4px;
   background: #f5f4fa;
 }
-.about__button:hover {
-  color: #fff;
-  background: #2196f3;
+.about__item:hover {
+  background-color: #2196f3;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.about__item:hover .about__button {
+  color: #fff;
 }
 .about__button:focus .about__link {
   color: #fff;
@@ -363,6 +365,15 @@ background: var(--WebStudio-color);
 }
 .hero__img {
   margin-bottom: 20px;
+}
+.hero__box-text {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.54px;
 }
 .hero__box-text {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -433,25 +444,13 @@ background: var(--WebStudio-color);
   z-index: 2;
 }
 
-.box-text {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 155.556% */
-  letter-spacing: 0.54px;
-}
-
 img {
   display: block;
   width: 100%;
 }
 
 .footer {
-  /* display: flex;
-  justify-content: space-between; */
-  background-color: background-color2;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-right: 215px;
@@ -461,14 +460,14 @@ img {
   } */
 }
 .footer__title1 {
-  color: WebStudio-color;
+  color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.38;
 }
 .footer__title2 {
-  color: background-color;
+  color: #fff;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -479,7 +478,7 @@ img {
   justify-content: center;
 }
 .footer__text {
-  color: background-color;
+  color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -493,7 +492,7 @@ img {
   margin-top: 9px;
 }
 .footer__link {
-  color: additional-text-color;
+  color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -513,7 +512,7 @@ img {
 }
 .footer__pictures-item {
   transition-duration: 250ms;
-  transition-property: background-color;
+  transition-property: #fff;
   transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;

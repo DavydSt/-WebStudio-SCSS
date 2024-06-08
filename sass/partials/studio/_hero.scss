@@ -1,25 +1,24 @@
 .hero {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: $button-background;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $button-background;
 
-  
   &__list {
     display: flex;
     gap: 30px;
     margin-top: 50px;
   }
-  
+
   &__article {
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   }
-  
+
   &__article {
     background-color: $background-color;
     padding-bottom: 30px;
   }
-  
+
   &__title1 {
     color: $text-color;
     text-align: center;
@@ -27,14 +26,14 @@
     font-weight: 700;
     line-height: 1.16;
   }
-  
+
   &__img {
     width: 270px;
     height: 260px;
     flex-shrink: 0;
     margin-bottom: 30px;
   }
-  
+
   &__title {
     color: $text-color;
     text-align: center;
@@ -42,7 +41,7 @@
     font-weight: 500;
     line-height: 1.18;
   }
-  
+
   &__text {
     color: $additional-text-color;
     text-align: center;
@@ -55,24 +54,22 @@
   &__pectures {
     transition-duration: 250ms;
     transition-property: background-color, fill;
-    transition-delay: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-delay: cubic-bezier(0.4, 0, 0.2, 1);
     width: 20px;
     height: 20px;
     fill: $additional-text-color;
   }
 
-
-  
-   &__picturis-list{
+  &__picturis-list {
     display: flex;
     justify-content: center;
     gap: 10px;
-  
+
     padding-top: 16px;
     padding-left: 32px;
     padding-right: 32px;
-}
-  
+  }
+
   &__picturis-item {
     @include flex-box();
     width: 44px;
@@ -80,29 +77,28 @@
     border-radius: 100%;
     padding: 12px;
   }
-  
+
   &__picturis-link {
     width: 44px;
     height: 44px;
     border-radius: 100%;
     padding: 12px;
   }
-  
+
   &__picturis-item:hover {
     background-color: $WebStudio-color;
   }
-  
+
   &__picturis-item:hover &__pectures {
     fill: $background-color;
   }
-  
+
   &__picturis-link:focus &__pectures {
     fill: $background-color;
   }
-  
+
   &__picturis-link:focus {
     background-color: $WebStudio-color;
     fill: $background-color;
   }
-
 }

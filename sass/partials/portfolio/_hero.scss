@@ -21,7 +21,15 @@
     margin-bottom: 20px;
   }
   
- 
+  &__box-text {
+    color: $background-color;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: 0.54px;
+  }
   
   &__box-text {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -133,15 +141,7 @@
   z-index: 2;
 }
 
-.box-text {
-  color: $background-color;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 155.556% */
-  letter-spacing: 0.54px;
-}
+
 
 img {
   display: block;

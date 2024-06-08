@@ -1,15 +1,14 @@
 
   
  .footer {
-    /* display: flex;
-    justify-content: space-between; */
-    background-color: background-color2;
+
+    background-color: $background-color2;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-right: 215px;
 
    &__title1 {
-      color: WebStudio-color;
+      color: $WebStudio-color;
       font-family: Raleway;
       font-size: 26px;
       font-weight: 700;
@@ -17,7 +16,7 @@
     }
     
    &__title2 {
-      color: background-color;
+      color: $background-color;
       font-family: Raleway;
       font-size: 26px;
       font-weight: 700;
@@ -30,7 +29,7 @@
     }
     
    &__text {
-      color: background-color;
+      color: $background-color;
       font-family: Roboto;
       font-size: 14px;
       font-style: normal;
@@ -46,7 +45,7 @@
     }
     
    &__link {
-      color: additional-text-color;
+      color: $additional-text-color;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.71;
@@ -70,7 +69,7 @@
     
    &__pictures-item {
       transition-duration: 250ms;
-      transition-property: background-color;
+      transition-property: $background-color;
       transition-delay: cubic-bezier(0.4, 0, 0.2, 1); 
       @include flex-box();
       background-color: rgba(255, 255, 255, 0.1);
@@ -92,6 +91,7 @@
     
    &__picture-list {
       display: flex;
+      // gap: 10px;
     }
     
    &__pictures-item {
@@ -119,6 +119,8 @@
   
   .sing-up {
     margin-left: 93px;
+
+
 
     &__container {
       @include flex-box();
