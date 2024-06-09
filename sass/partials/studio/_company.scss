@@ -34,11 +34,11 @@
   }
   
   &__item:hover {
-    border: 1px solid $WebStudio-color;
+    border: 1px solid $webstudio-color;
   }
   
   &__item:hover &__picture {
-    fill: $WebStudio-color;
+    fill: $webstudio-color;
   }
   
   &__picture {
@@ -51,12 +51,12 @@
   }
   
   &__item:focus .compan-link {
-    fill: $WebStudio-color;
-    border: 1px solid $WebStudio-color;
+    fill: $webstudio-color;
+    border: 1px solid $webstudio-color;
   }
   
   .compan-link:focus &__picture {
-    fill: $WebStudio-color;
+    fill: $webstudio-color;
   }
 
 }

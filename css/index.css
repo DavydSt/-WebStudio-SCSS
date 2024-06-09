@@ -466,16 +466,19 @@ background: var(--WebStudio-color);
   border-radius: 100%;
   padding: 12px;
 }
-.hero__picturis-link {
+.hero__pictures-link {
   width: 44px;
   height: 44px;
   border-radius: 100%;
   padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero__picturis-item:hover {
+.hero__pictures-link:hover {
   background-color: #2196f3;
 }
-.hero__picturis-item:hover .hero__pectures {
+.hero__pictures-link:hover .hero__pectures {
   fill: #fff;
 }
 .hero__picturis-link:focus .hero__pectures {
@@ -542,7 +545,6 @@ background: var(--WebStudio-color);
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-right: 215px;
   /*&__pictures-link:focus {
     background-color: var(--WebStudio-color);
     fill: var(--background-color);

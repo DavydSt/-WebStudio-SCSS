@@ -81,11 +81,11 @@
   }
 
   &__korobka:hover {
-    border: 1px solid$WebStudio-color;
+    border: 1px solid$webstudio-color;
   }
 
   &__korobka:hover &__picture {
-    fill: $WebStudio-color;
+    fill: $webstudio-color;
   }
 
   &__picture {
@@ -126,7 +126,7 @@
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    background: $WebStudio-color;
+    background: $webstudio-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: $background-color;
     text-align: center;
@@ -166,7 +166,7 @@
 
   .select:checked {
     background-image: url(../symbol-defs.svg#icon-icon-check);
-    background-color: $WebStudio-color;
+    background-color: $webstudio-color;
   }
 
 .coordination {

@@ -8,7 +8,7 @@
   
   &__title1 {
     font-family: Raleway;
-    color: $WebStudio-color;
+    color: $webstudio-color;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.38;
@@ -25,13 +25,13 @@
   &__link:focus,
   &__link:hover {
     outline: none;
-    color: $WebStudio-color;
+    color: $webstudio-color;
   }
   
   &__contact:focus,
   &__contact:hover {
     outline: none;
-    color: $WebStudio-color;
+    color: $webstudio-color;
   }
 
   &__container {
@@ -61,7 +61,7 @@ display: flex;
     top: 48px;
     transition-duration: 400ms;
     transition-delay: 0s;
-    background-color: $WebStudio-color;
+    background-color: $webstudio-color;
     border-radius: 2px;
     display: block;
   }
@@ -107,11 +107,11 @@ display: flex;
   }
   
   &__contact:hover {
-    color: $WebStudio-color;
+    color: $webstudio-color;
   }
   
   &__item:hover &__pictures {
-    fill: $WebStudio-color;
+    fill: $webstudio-color;
   }
   
   &__picture {

@@ -78,18 +78,19 @@
     padding: 12px;
   }
 
-  &__picturis-link {
+  &__pictures-link {
     width: 44px;
     height: 44px;
     border-radius: 100%;
     padding: 12px;
+    @include flex-box();
   }
 
-  &__picturis-item:hover {
-    background-color: $WebStudio-color;
+  &__pictures-link:hover {
+    background-color: $webstudio-color;
   }
 
-  &__picturis-item:hover &__pectures {
+  &__pictures-link:hover &__pectures {
     fill: $background-color;
   }
 
@@ -98,7 +99,7 @@
   }
 
   &__picturis-link:focus {
-    background-color: $WebStudio-color;
+    background-color: $webstudio-color;
     fill: $background-color;
   }
 }

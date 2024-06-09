@@ -5,10 +5,9 @@
     background-color: $background-color2;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-right: 215px;
 
    &__title1 {
-      color: $WebStudio-color;
+      color: $webstudio-color;
       font-family: Raleway;
       font-size: 26px;
       font-weight: 700;
@@ -80,7 +79,7 @@
     }
     
    &__pictures-item:hover {
-      background-color: $WebStudio-color;
+      background-color: $webstudio-color;
     }
     
    &__pectures {
@@ -163,7 +162,7 @@
       width: 200px;
       height: 50px;
       border-radius: 4px;
-      background: $WebStudio-color;
+      background: $webstudio-color;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     }
     
