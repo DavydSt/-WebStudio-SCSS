@@ -6,6 +6,9 @@
   &__list {
     display: flex;
     gap: 30px;
+    @media screen and (min-width: 480px) {
+  display: block;
+    }
   }
   
   &__title {
@@ -15,7 +18,11 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
-  }
+    @media screen and (min-width: 480px) {
+     display: flex;
+    justify-content: center;
+    }
+  } 
   
   &__list &__item::before {
     display: block;
@@ -25,6 +32,12 @@
     background-color: $button-background;
     margin-bottom: 30px;
     border-radius: 4px;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+    }
   }
   
   &__list &__item:first-child::before {
