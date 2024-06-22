@@ -1,9 +1,16 @@
 /*header*/
 
 .header {
+//   max-width: 480px;
+// height: 60px;
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: solid $line-color;
+
+//   @media screen and (min-width:1200px) {
+//     max-width: 480px;
+// height: 60px;
+//   }
 
   &__title1 {
     font-family: Raleway;
@@ -35,6 +42,9 @@
 
   &__container {
     display: flex;
+    max-width: 480px;
+    height: 60px;
+    // justify-content: flex-end;
   }
 
   &__link {
@@ -88,6 +98,11 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    opacity: 0;
+    position: absolute;
+    @media screen and (min-width:1200px) {
+  opacity: 1;
+    }
   }
 
   &__navigation {
@@ -135,22 +150,19 @@
   }
 
   &__burger-menu {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+
     @media screen and (min-width: 1200px) {
-      width: 40px;
-      height: 40px;
       opacity: 0;
-    }
-    @media screen and (min-width: 480px) {
-      opacity: 1;
     }
   }
 
   &__deletion {
-    @media screen and (min-width: 1200px) {
-      opacity: 1;
-    }
+    opacity: 1;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 1200px) {
       opacity: 0;
       position: absolute;
     }

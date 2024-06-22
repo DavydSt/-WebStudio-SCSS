@@ -1,13 +1,15 @@
 .main {
     padding-top: 94px;
     padding-bottom: 59px;
+    max-width: 450px;
 
   
   &__list {
     display: flex;
     gap: 30px;
-    @media screen and (min-width: 480px) {
-  display: block;
+    display: block;
+    @media screen and (min-width: 1200px) {
+ 
     }
   }
   
@@ -18,25 +20,32 @@
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
-    @media screen and (min-width: 480px) {
-     display: flex;
+    display: flex;
     justify-content: center;
+    @media screen and (min-width: 1200px) {
+   
     }
   } 
-  
+
+  &__list,
+  &__item{
+    max-width: 450px; 
+  }
+
   &__list &__item::before {
-    display: block;
-    width: 270px;
+   
+   
     height: 120px;
     padding: 25px 100px;
     background-color: $button-background;
     margin-bottom: 30px;
     border-radius: 4px;
-    @media screen and (min-width: 480px) {
-      width: 450px;
-      height: 120px;
-      display: flex;
-      justify-content: center;
+    max-width: 450px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+     
     }
   }
   
