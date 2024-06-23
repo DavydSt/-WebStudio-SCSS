@@ -1,5 +1,5 @@
 .about {
-  width: 480px;
+  // width: 480px;
   height: 400px;
   display: flex;
   // align-items: center;
@@ -9,8 +9,7 @@
  
 
   @media screen and (min-width: 1200px) {
-   max-width: 768px;
-    height: 400px;
+  width: 1200px;
   }
 
   &__container {
@@ -18,8 +17,8 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 480px;
-      height: 400px;
+      // width: 480px;
+      // height: 400px;
       background-image: linear-gradient(#2f303a66, #2f303a66),
         url(../images/people.jpg);
       background-position: center;
@@ -31,7 +30,7 @@
  
 
     @media screen and (min-width: 1200px) {
-      max-width: 768px;
+      width: 1200px;
       height: 400px;
       display: flex;
       align-items: center;

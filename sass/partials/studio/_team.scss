@@ -1,11 +1,19 @@
 .team {
-    padding-top: 59px;
-    padding-bottom: 94px;
-    @media screen and (min-width: 480px) {
-   opacity: 0;
-   height: 0px;
-   padding-top: 0px;
-   padding-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  
+    // opacity: 0;
+    width: 0px;
+    height: 0px;
+    // padding-top: 0px;
+    // padding-bottom: 0px;
+  //  position: absolute;
+   display: none;
+    @media screen and (min-width: 1200px) {
+  // position: relative;
+  padding-top: 59px;
+  padding-bottom: 94px;
+
     }
    
    

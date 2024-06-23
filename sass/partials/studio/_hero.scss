@@ -2,7 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: $button-background;
-  width: 480px;
+  // width: 480px;
 
   &__list {
     display: block;
@@ -36,9 +36,9 @@
   }
 
   &__img {
-    width: 450px;
-   height: 460px;
-    flex-shrink: 0;
+    max-width: 450px;
+   height: auto;
+   
     margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
       width: 354px;
